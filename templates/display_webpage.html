@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>dispaly_webpage</h1>
+
+        <table border="5px">
+            <tr>
+                <th>pk</th>
+                <th>topic_name</th>
+                <th>name</th>
+                <th>url</th>
+            </tr>
+
+        {% for to in QLWO %}
+            <tr>
+                <td>{{to.pk}}</td>
+                <td>{{to.topic_name}}</td>
+                <td>{{to.name}}</td>
+                <td>{{to.url}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>
